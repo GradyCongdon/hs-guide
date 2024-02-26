@@ -78,7 +78,7 @@ export const twoP_6 = {
   },
 };
 
-const mts = (timeString: { split: (arg0: string) => [any, any] }) => {
+const mts = (timeString: string) => {
   const [minutes, seconds] = timeString.split(":");
   return parseInt(minutes) * 60 + parseInt(seconds);
 };
