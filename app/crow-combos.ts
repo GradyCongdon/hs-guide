@@ -78,12 +78,12 @@ export const twoP_6 = {
   },
 };
 
-const mts = (timeString) => {
+const mts = (timeString: { split: (arg0: string) => [any, any] }) => {
   const [minutes, seconds] = timeString.split(":");
   return parseInt(minutes) * 60 + parseInt(seconds);
 };
 
-const crowURL = (timestamp) =>
+const crowURL = (timestamp: string) =>
   `https://www.youtube.com/watch?v=z1ttonHkq7E&t=${mts(timestamp)}s`;
 
 export const twoP_7 = {

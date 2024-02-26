@@ -1,4 +1,3 @@
-import { Play, Player, Player2, Player3 } from "./combos/Player";
 import * as combos from "./crow-combos";
 
 const makeEmbed = (url: string) =>
@@ -7,7 +6,219 @@ const makeEmbed = (url: string) =>
     .replace("&t=", "?start=")
     .replace(/s$/, "") + "&rel=0&enablejsapi=1&autoplay=1";
 
-const c = (combo) => ({
+const c = (
+  combo:
+    | {
+        category: string;
+        description: string;
+        url: string;
+        author: string;
+        position: string;
+        properties: string[];
+        damage: { sol: number };
+        notation: string;
+      }
+    | {
+        category: string;
+        description: string;
+        url: string;
+        author: string;
+        position: string;
+        properties: string[];
+        damage: { sol: number };
+        notation: string;
+      }
+    | {
+        category: string;
+        description: string;
+        url: string;
+        author: string;
+        position: string;
+        properties: string[];
+        damage: { sol: number };
+        notation: string;
+      }
+    | {
+        category: string;
+        url: string;
+        author: string;
+        position: string;
+        properties: string[];
+        damage: { sol: number };
+        description: string;
+        notation: string;
+      }
+    | {
+        category: string;
+        url: string;
+        author: string;
+        position: string;
+        properties: string[];
+        damage: { sol: number };
+        description: string;
+        notation: string;
+      }
+    | {
+        category: string;
+        url: string;
+        author: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { may: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        characters: string[];
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        characters: string[];
+        notation: string;
+        properties: string[];
+        damage: { axl: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+        properties: string[];
+        damage: { sol: number };
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+      }
+    | {
+        category: string;
+        author: string;
+        url: string;
+        position: string;
+        description: string;
+        notation: string;
+      }
+) => ({
   ...combo,
   embed: makeEmbed(combo.url),
   timestamp: parseInt(combo.url.split("&t=")[1], 10),
@@ -26,11 +237,6 @@ export default function Home() {
             <h1 className="text-mono">{notation}</h1>
           </a>
           <h2>{description}</h2>
-          {/* <Player embed={embed} /> */}
-          {/* <Play iframeId="crow-guide" timeStamp={timestamp} />
-          <p>
-            {embed} - {timestamp}
-          </p> */}
         </div>
       ))}
     </main>
