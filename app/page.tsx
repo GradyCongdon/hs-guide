@@ -119,7 +119,7 @@ export default function Home() {
     .filter((x) => filters(x));
   comboList.sort((a, b) => a.timestamp - b.timestamp);
   return (
-    <main className="flex min-h-screen flex-col justify-between pt-2 pb-24 px-4 md:px-8">
+    <main className="flex min-h-screen flex-col justify-between pt-2 pb-24 px-4 md:px-8 max-w-3xl mx-auto">
       <div className="flex flex-row justify-between align-middle mb-4">
         <h1>Crow Guide</h1>
         <button onClick={() => clear()} className="text-blue-500 text-md">
