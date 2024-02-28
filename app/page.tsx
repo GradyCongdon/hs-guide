@@ -1,7 +1,12 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
+
 import * as _combos from "./crow-combos";
 import { Player } from "./Player";
+
+import sixK from "./6k.png";
+import externalLink from "./external-link.svg";
 
 const combos = _combos as Record<string, ComboIn>;
 
@@ -146,7 +151,7 @@ export default function Home() {
           label={"Property"}
         />
       </div>
-      <section className="flex flex-col">
+      <section className="flex flex-col min-h-screen">
         {comboList.length === 0 && (
           <div className="text-center h-screen pt-40 align-middle">
             <span className="text-lg italic">No results</span>
@@ -171,14 +176,21 @@ export default function Home() {
           }) => (
             <div key={description} className="flex flex-col py-4">
               <a href={url}>
-                <h1 className="text-mono">
+                <h1 className="mt-4 mb-1 -ml-2 flex align-center">
                   <kbd className="bg-slate-800 px-2 leading-relaxed text-xl rounded-md">
                     {notation}
                   </kbd>
+                  <Image
+                    width={24}
+                    height={24}
+                    className="invert ml-1"
+                    src={externalLink}
+                    alt="external link"
+                  />
                 </h1>
               </a>
               <h2 className="text-sm">{description}</h2>
-              <div className="flex flex-row">
+              <div className="flex flex-row mb-2">
                 <span className="text-xs bg-indigo-100 text-black px-2 mr-1 my-2 rounded-md">
                   {position}
                 </span>
@@ -197,6 +209,61 @@ export default function Home() {
           )
         )}
       </section>
+      <div
+        className="relative mx-auto"
+        style={{ transform: "scale(.5) translateX(62.5px)" }}
+      >
+        <Image
+          src={sixK}
+          alt="k k k k k k"
+          style={{
+            position: "absolute",
+            opacity: 0.1,
+            transform: "translateX(-125px) scale(1.2)",
+          }}
+        />
+        <Image
+          src={sixK}
+          alt="k k k k k k"
+          style={{
+            position: "absolute",
+            opacity: 0.2,
+            transform: "translateX(-100px) scale(1.16)",
+          }}
+        />
+        <Image
+          src={sixK}
+          alt="k k k k k k"
+          style={{
+            position: "absolute",
+            opacity: 0.3,
+            transform: "translateX(-75px) scale(1.12)",
+          }}
+        />
+        <Image
+          src={sixK}
+          alt="k k k k k k"
+          style={{
+            position: "absolute",
+            opacity: 0.5,
+            transform: "translateX(-50px) scale(1.08)",
+          }}
+        />
+        <Image
+          src={sixK}
+          alt="k k k k k k"
+          style={{
+            position: "absolute",
+            opacity: 0.6,
+            transform: "translateX(-25px) scale(1.02)",
+          }}
+        />
+        <Image
+          src={sixK}
+          alt="k k k k k k"
+          style={{ transform: "translateX(0) scale(.95)" }}
+        />
+      </div>
     </main>
   );
 }
