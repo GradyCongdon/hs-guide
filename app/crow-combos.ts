@@ -276,10 +276,44 @@ export const fiveK_2 = {
   url: crowURL("3:49"),
   position: "back-to-wall",
   description:
-    "STANDING ONLY Due to 5k being jump cancellable, it can have very strong ch conversions",
+    "STANDING ONLY - Due to 5k being jump cancellable, it can have very strong ch conversions",
   notation:
     "5k > 9 j.d > adc > j.p > dl. j.p > c.s > 5h > 236[D] > 2p (whiff) >66 c.s> 5h > 214k > 66 2k > 6h > 623h",
 };
 
 // 4:06
 //
+
+export const cs_1 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=VapODyB6nPzjnIJh&amp;clip=UgkxwMUmtlqScP4PT7T7OEv7Ai1Rms-qxKLp&amp;clipt=EICIWhjuwFo",
+  position: "mid-screen",
+  properties: ["standing-only", "wall-break"],
+  description:
+    "STANDING ONLY - Ky gets huge reward on c.s on standing opponents",
+  notation: "c.s > 9 j.d > adc > j.h > c.s > 6h > 5k > 6h > 623h > 623h",
+};
+
+export const cs_2 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=ThZiZ3iFHR3Yba6R&amp;clip=UgkxiHP-Eb4wDDEP3xOHDiRQ2vctL7Xt03BH&amp;clipt=EMDDWhi_9Vo",
+  position: "corner",
+  properties: ["wall-break"],
+  description: "c.s corner combo",
+  notation: " c.s > 6h > 214s > 66 6h > 623h > c.s > 623h",
+};
+
+export const cs_3 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=F6reVTByDKfWRbTw&amp;clip=UgkxhqpVafsnrM5jDHz03riooyDkQsCDqtBQ&amp;clipt=EKT2WhjErls",
+  position: "back-to-wall",
+  properties: ["wall-break", "wild-assault"],
+  description: "c.s corner to corner with WA",
+  notation: "c.s > 2h > 236d > c.s > 214k > 5h > 214k >66 623h",
+};
