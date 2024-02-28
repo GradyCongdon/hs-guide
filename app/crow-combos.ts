@@ -1,3 +1,11 @@
+const mts = (timeString: string) => {
+  const [minutes, seconds] = timeString.split(":");
+  return parseInt(minutes) * 60 + parseInt(seconds);
+};
+
+const crowURL = (timestamp: string) =>
+  `https://www.youtube.com/watch?v=z1ttonHkq7E&t=${mts(timestamp)}s`;
+
 export const twoP_1 = {
   category: "lights",
   description: "Basic confirm into knockdown off 2p mash",
@@ -77,14 +85,6 @@ export const twoP_6 = {
     sol: 109,
   },
 };
-
-const mts = (timeString: string) => {
-  const [minutes, seconds] = timeString.split(":");
-  return parseInt(minutes) * 60 + parseInt(seconds);
-};
-
-const crowURL = (timestamp: string) =>
-  `https://www.youtube.com/watch?v=z1ttonHkq7E&t=${mts(timestamp)}s`;
 
 export const twoP_7 = {
   category: "lights",
@@ -230,7 +230,7 @@ export const fiveP_1 = {
   url: crowURL("2:13"),
   position: "mid-screen",
   description: "Anti air 5p conversion",
-  notation: "aa 5p > 66 c.s > dc > c.s > 5h > 214k > 66 5k > 6h > 623h > 623h",
+  notation: "AA 5p > 66 c.s > dc > c.s > 5h > 214k > 66 5k > 6h > 623h > 623h",
 };
 
 export const fiveP_2 = {
@@ -239,7 +239,7 @@ export const fiveP_2 = {
   url: crowURL("2:22"),
   position: "mid-screen",
   description: "Anti air 5p conversion closer to corner",
-  notation: "aa 5p > 66 c.s > dc > c.s > 6h > 5k > 6h > 214s >6h >66 623h",
+  notation: "AA 5p > 66 c.s > dc > c.s > 6h > 5k > 6h > 214s >6h >66 623h",
 };
 
 export const fiveP_3 = {
@@ -248,7 +248,7 @@ export const fiveP_3 = {
   url: crowURL("2:30"),
   position: "corner",
   description: "Anti air 5p conversion in corner",
-  notation: "aa 5p > 66 c.s > dc 214s > 6h > 623h > c.s > 6h > 623h",
+  notation: "AA 5p > 66 c.s > dc 214s > 6h > 623h > c.s > 6h > 623h",
 };
 
 export const fiveP_4 = {
@@ -257,7 +257,7 @@ export const fiveP_4 = {
   url: crowURL("2:37"),
   position: "mid-screen",
   description: "K buttons confirm into 2d for a knockdown",
-  notation: "2k/5k > 2d > dl. 236h",
+  notation: "5k > 2d > dl. 236h",
 };
 
 // Skipped some
@@ -304,7 +304,7 @@ export const cs_2 = {
   position: "corner",
   properties: ["wall-break"],
   description: "c.s corner combo",
-  notation: " c.s > 6h > 214s > 66 6h > 623h > c.s > 623h",
+  notation: "c.s > 6h > 214s > 66 6h > 623h > c.s > 623h",
 };
 
 export const cs_3 = {
@@ -316,4 +316,27 @@ export const cs_3 = {
   properties: ["wall-break", "wild-assault"],
   description: "c.s corner to corner with WA",
   notation: "c.s > 2h > 236d > c.s > 214k > 5h > 214k >66 623h",
+};
+
+export const cs_4 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=V_QxkOuIb8ccE0Wd&amp;clip=UgkxMlrnzM2glgF-DcD7WSGSjV1QWTGlRfoF&amp;clipt=EKyBXBijvlw",
+  position: "back-to-wall",
+  properties: ["wall-break", "burst-punish"],
+  description: "Back to wall burst punish",
+  notation: "c.s > 5h > 236[D] > 44 > 66 c.s > 6h > 214s > 6h > 66 623h",
+};
+
+export const cs_5 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  timestamp: mts("25:16"),
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=1Nhi2xTSDaoK5om3&amp;clip=Ugkxm3GLaMfbLOayfJNSPm5DtXvSHlRRAi9j&amp;clipt=EOy_XBi4-lw",
+  position: "mid-screen",
+  properties: ["wall-break", "super-punish"],
+  description: "50 meter super punish",
+  notation: "c.s > dc 214s > 66RRC~5h > 623h > c.s > 6h > 623h > 623h",
 };
