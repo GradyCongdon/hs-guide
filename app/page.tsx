@@ -1,13 +1,9 @@
 "use client";
 import { useState } from "react";
-import * as combos from "./crow-combos";
+import * as _combos from "./crow-combos";
 import { Player } from "./Player";
 
-const makeEmbed = (url: string) =>
-  url
-    .replace(".com/watch?v=", ".com/embed/")
-    .replace("&t=", "?start=")
-    .replace(/s$/, "") + "&rel=0&enablejsapi=1&autoplay=1";
+const combos = _combos as Record<string, ComboIn>;
 
 type ComboIn = {
   url: string;
@@ -22,6 +18,12 @@ type Combo = ComboIn & {
   timestamp: number;
   starter: string;
 };
+
+const makeEmbed = (url: string) =>
+  url
+    .replace(".com/watch?v=", ".com/embed/")
+    .replace("&t=", "?start=")
+    .replace(/s$/, "") + "&rel=0&enablejsapi=1&autoplay=1";
 
 const fixNotation = (notation: string) => notation.replace(/> \[/, ">&nbsp;");
 
