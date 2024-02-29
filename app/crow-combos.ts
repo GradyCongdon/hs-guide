@@ -318,6 +318,19 @@ export const cs_3 = {
   notation: "c.s > 2h > 236d > c.s > 214k > 5h > 214k >66 623h",
 };
 
+export const cs_6 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  timestamp: mts("25:00"),
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=3nW4l-TWV8ISRmhs&amp;clip=UgkxgCKc0jy_F1fM6HUfERRQi942ph47nNzR&amp;clipt=EPCwWxjU_Fs",
+  position: "back-to-wall",
+  properties: ["wall-break", "wild-assault", "standing-only"],
+  description: "STANDING ONLY c.s corner to corner with WA",
+  notation:
+    "c.s > 9 j.d > ADC > j.h > c.s > 5h > 236[D] > 2p(whiff) > 66c.s > 5h > 214k > 66 2k > 6h > 623h",
+};
+
 export const cs_4 = {
   category: "c.s - slash of the close variety",
   author: "crow",
@@ -340,3 +353,53 @@ export const cs_5 = {
   description: "50 meter super punish",
   notation: "c.s > dc 214s > 66RRC~5h > 623h > c.s > 6h > 623h > 623h",
 };
+
+export const cs_7 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  timestamp: mts("25:22"),
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=Q2X4u8QZv-0Yy7Lc&amp;clip=UgkxoSuV5PWh5rltm9ew7JiqxS4wYE3zkCIz&amp;clipt=EPD4XBjUxF0",
+  position: "mid-screen",
+  properties: ["wall-break", "wild-assault", "super-punish"],
+  description: "More hitconfirmable 50 bar c.s combo",
+  notation:
+    "c.s > 2h > 214s > 66RRC > 66 236h > 66c.s > 5h > 623h > c.s > 6h > 623h",
+};
+
+export const cs_8 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  timestamp: mts("25:33"),
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=_txugqnzPQLzm3TS&amp;clip=UgkxGf6oXVMOQYw-9Si3SywBXhLkyFn5U7if&amp;clipt=EPDDXRjrh14",
+  position: "mid-screen",
+  properties: ["wall-slump"],
+  description: "Slump route off c.s for 50 bar",
+  notation: "c.s > dc 66BRC > 2h > 236h > 66 c.s > 2h > 214k > c.s",
+};
+
+export const cs_9 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  timestamp: mts("25:41"),
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=6QO3ptQp56bhnlY4&amp;clip=UgkxRGmndz5Eu1me7yaVjQmS-3ZP7--JyErR&amp;clipt=ENCIXhjBwF4",
+  position: "corner",
+  properties: ["wall-break", "shock-state-required"],
+  description: "SHOCK STATE ONLY - Corner shock state combo",
+  notation: "c.s > 6h > 623h > c.s > 6h > 214s > 6h > 66 623h",
+};
+
+export const cs_10 = {
+  category: "c.s - slash of the close variety",
+  author: "crow",
+  type: "clip",
+  timestamp: mts("25:48"),
+  url: "https://www.youtube.com/embed/z1ttonHkq7E?si=2a5rbrrE7JAGVvZf&amp;clip=UgkxIUg5LHWLoFCGk4Dq4ImZGv_JOcMHEoxv&amp;clipt=EPXDXhj_jl8",
+  position: "corner",
+  properties: ["wall-break", "shock-state-required", "wild-assault"],
+  description: "SHOCK STATE ONLY - 50 bar shock state combo",
+  notation: "c.s > 2h > 214k > 236236p > 5h > 236d > 6h > 623h > c.s > 623h",
+};
+//
