@@ -101,7 +101,7 @@ const Helper = () => {
     description: "${description}",
     notation: "${notationText}"
 }`;
-  if (window.location.hostname !== "localhost") return <div></div>;
+  if (process.env.NODE_ENV !== "development") return <div></div>;
   return (
     <div className="grid" style={{ gridTemplateColumns: "90px 200px" }}>
       <label
